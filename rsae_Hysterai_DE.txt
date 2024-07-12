@@ -42,16 +42,16 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "188.114.96.11",
-        "188.114.97.11",
-        "2a06:98c1:3121::b",
-        "2a06:98c1:3120::b",
+        "188.114.96.3",
+        "188.114.97.3",
+        "2a06:98c1:3120::3",
+        "2a06:98c1:3121::3",
         "104.17.148.22",
         "104.17.147.22",
-        "188.114.97.11",
-        "188.114.96.11",
-        "2a06:98c1:3121::b",
-        "2a06:98c1:3120::b"
+        "188.114.97.3",
+        "188.114.96.3",
+        "2a06:98c1:3121::3",
+        "2a06:98c1:3120::3"
       ]
     },
     "independent_cache": true
@@ -66,7 +66,7 @@
       "auto_route": true,
       "strict_route": true,
       "endpoint_independent_nat": true,
-      "stack": "mixed",
+      "stack": "system",
       "sniff": true,
       "sniff_override_destination": true
     },
@@ -91,9 +91,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇦__ЯΞZΛ__ 0",
-        "🇺🇦__ЯΞZΛ__ 1",
-        "🇺🇦__ЯΞZΛ__ 2"
+        "🇩🇪__ЯΞZΛ__Hysteria2"
       ],
       "default": "auto"
     },
@@ -101,9 +99,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇦__ЯΞZΛ__ 0",
-        "🇺🇦__ЯΞZΛ__ 1",
-        "🇺🇦__ЯΞZΛ__ 2"
+        "🇩🇪__ЯΞZΛ__Hysteria2"
       ],
       "url": "http://connectivitycheck.gstatic.com/generate_204",
       "interval": "21m0s",
@@ -111,47 +107,25 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇺🇦__ЯΞZΛ__ 0",
-      "server": "91.231.182.239",
-      "server_port": 17479,
+      "tag": "🇩🇪__ЯΞZΛ__Hysteria2",
+      "server": "194.9.6.54",
+      "server_port": 25998,
       "obfs": {
         "type": "salamander",
-        "password": "KJkjsusu878734jhhYyUJJ"
+        "password": "sDFgv452\u0026$@jh*\u0026*ks39HS2Hj"
       },
-      "password": "BjJBojuzng",
+      "password": "TzkWCfZHzj",
       "tls": {
         "enabled": true,
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇺🇦__ЯΞZΛ__ 1",
-      "server": "91.231.182.239",
-      "server_port": 18221,
-      "obfs": {
-        "type": "salamander",
-        "password": "KHg jGG5557jkskKSJSJ"
-      },
-      "password": "BjJBojuzng",
-      "tls": {
-        "enabled": true,
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇺🇦__ЯΞZΛ__ 2",
-      "server": "91.231.182.239",
-      "server_port": 52894,
-      "obfs": {
-        "type": "salamander",
-        "password": "kj34HJhs673518Fhats"
-      },
-      "password": "BjJBojuzng",
-      "tls": {
-        "enabled": true,
-        "insecure": true
+        "insecure": true,
+        "ech": {
+          "config": [
+            "-----BEGIN ECH CONFIGS-----",
+            "ADn+DQA1AAAgACDy3ubfDdSUVQWVRiupepJnc+zS1sitylhvLzyw80unJgAIAAEA",
+            "AQABAAMAAicnAAA=",
+            "-----END ECH CONFIGS-----"
+          ]
+        }
       }
     },
     {
@@ -233,7 +207,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "dD0MeaH0Bny8RYSE"
+      "secret": "JlVHAPv8zFY-iPkc"
     }
   }
 }
